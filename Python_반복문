@@ -1,0 +1,64 @@
+While 문 - While은 사전적으로 ~하는 동안을 의미, Python에서 While은 조건이 참이 되는 동안 반복하는 반복문.
+
+While 조건:
+  명령1
+  증감처리명령(만약 무한루프를 생각하고 있다면 이 명령은 필요없다, 단 반복을 탈출하는 조건이 필요하다)
+
+#While
+student = 1
+while student <= 10:
+  print("학생은"+str(student)+"명 입니다")
+  student +=1
+
+#무한 루프
+While True:
+  num = int(input("0을 입력하면 루프를 빠져나갑니다"))
+  if num == 0:
+    break;
+
+#구구단
+dan = 2
+num = 1
+while dan < 10:
+  while num < 10:
+    print(str(dan) + "*" +str(num) + "=" + str(dan*num))
+    num +=1
+  dan +=1
+  num =1
+
+for 문 - Python에서의 for문은 주로 컬렉션의 요소를 순서대로 순회하면서 반복을 수행하는 반복문.
+
+for 제어변수 in 컬렉션 : 
+  명령
+
+#for
+student = ['홍길동', '박길동', '윤길동', '최길동', '김길동']
+for i in student :
+  print(i, "학생이 속한 반이다")
+  
+#구구단
+for i in range(2,10);
+  for k in range(2,10);
+    print(str(i)+"*"+str(k)+"="+str(i*k))
+    
+break - break는 반복을 탈출할 때 사용하는 명령. 보통 특정 조건에 의해 반복을 탈출하기 때문에 if 문과 같이 사용.
+
+#break
+while True:
+  num=int(input("0을 입력하면 종료됩니다"))
+  if num==0;
+    break;
+  else:
+    print("0을 입력하지 않으면 반복됩니다"))
+
+continue - continue는 반복을 무시하고 다음 반복을 수행할 때 사용하는 명령. break와 마찬가지로 조건에 의해 반복을 무시하기 때문에 if 문과 같이 사용.
+
+#continue
+sum = 0
+for i in range(1,101):
+  if i%2==0:
+    continue
+  sum +=i
+  
+print(sum)
+- 1부터 100까지 숫자를 순회하면서 짝수인 경우에는 continue로 반복을 무시, 홀수일 경우에만 sum.
