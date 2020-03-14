@@ -1,0 +1,55 @@
+Loops
+
+- Sometimes, you need to perform code on each item in a list. This si called iteration, and it can be accomplished with a while loop and a counter variable.
+
+#Loops
+
+words = ["hello","world","spam","eggs"]
+counter = 0
+max_index = len(words) - 1
+
+while counter <= max_index:
+  word = words[counter]
+  print(word+"!")
+  counter = counter + 1
+  
+>>>
+hello!
+world!
+spam!
+eggs!
+>>>
+
+for Loop
+
+- Iterating through a list using a while loop requries quite a lot of code, so Python provides the for loop as a shortcut that accomplishes the same thing.
+  The same code from the previous example can be written with a for loop, as follows:
+- The for loop is commonly used to repeat some code a certain number of times. This is done by combing for loops with range objects.
+
+#for Loop
+
+words=["Hello","world","spam","eggs"]
+for word in words:
+  print(word+"!")
+
+>>>
+Hello!
+world!
+spam!
+eggs!
+>>>
+
+letters = ['a','b','c']
+for I in letters:
+print(I)
+
+for I in range(5):
+  print("Hello!")
+  
+>>>
+Hello!
+Hello!
+Hello!
+Hello!
+Hello!
+>>>
