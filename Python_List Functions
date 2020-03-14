@@ -1,0 +1,42 @@
+List Functions
+
+- Another way of altering lists is using the append method. This adds an item to the end of an existing list.
+- To get the number of items in a list, you can use the len function.
+- The insert method is similar to append, except that it allows you to insert a new item at any position in the list, as opposed to just at the end.
+- The index method finds the first occurrence of a list item and returns its index. If the item isn't in the list, it raises a ValueError.
+
+#List Functions
+nums = [1,2,3]
+nums.append(4)
+print(nums)
+
+>>>
+[1,2,3,4]
+>>>
+
+nums = [1,3,5,2,4]
+print(len(nums))
+
+>>>
+5
+>>>
+
+words = ["Python","fun"]
+index = 1
+words.insert(index,"is")
+print(words)
+
+>>>
+["Python","is","fun"]
+>>>
+
+letters = ['p','q','r','s','p','u']
+print(letters.index('r'))
+print(letters.index('p'))
+print(letters.index('z'))
+
+>>>
+2
+0
+ValueError: 'z' is not on list
+>>>
