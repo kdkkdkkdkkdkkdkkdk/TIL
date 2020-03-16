@@ -1,0 +1,33 @@
+#print() 함수의 이해 : sep, end 옵션 사용하기
+
+#Separator 옵션
+  print() 함수에서 사용 가능한 옵션 중 하나로, 여러 개의 값을 입력 받았을 때 출력 되는 값에서 각 요소마다 생기는 공백 값을 대체하여 바꿔줌.
+  print() 함수에 문자열 'A','B','C','D','E' 5개의 요소를 넣고 출력하면 각 요소마다 공백이 생기는데 sep =" 옵션에 '-'를 설정하면
+  A=B=C=D=E로 출력됨.
+  
+print('A','B','C','D','E')
+print('A','B','C','D','E', sep='-')
+
+>>>
+A B C D E
+A-B-C-D-E
+
+#End 옵션
+  print() 함수에서 사용 가능한 옵션 중 하나로, print() 함수를 여러 개 출력해보면 자동으로 줄바꿈이 되면서 출력되는 것을 확인할 수 있음.
+  print() 가 끝났을 때 마지막에서 개행(줄바꿈)이 설정되어 있기 때문. print()가 종료되면서 마지막에 줄바꿈이 아닌 다른 값으로 대체하고 싶을 때
+  end 옵션을 사용
+  
+print('hi, my name is Jaemin')
+print('nice to meet you')
+print('welcome to korea')
+print()
+print('hi, my name is Jaemin', end=' ')
+print('nice to meet you', end=' ')
+print('welcome to korea')
+
+>>>
+hi, my name is Jamin
+nice to meet you
+welcome to korea
+
+hi, my name is Jamin nice to meet you welcom to korea
