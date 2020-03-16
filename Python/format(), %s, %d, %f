@@ -1,0 +1,46 @@
+#문자열 포맷팅
+  문자열 포맷팅은 문자열 위치 중에 원하는 특정 위치에 원하는 문자 값을 마음대로 넣을 수 있도록 지정해주는 기능.
+  
+# %Operator
+  종류: %s(문자), %d(정수), %f(실수)
+  
+  "문자열 공간 %s" % (%s에 입력할 값)
+  
+  print('%s year %s month' % ('2020','02')) # 여기서 2020과 02값은 문자열
+  print('%d year %d month' % (2020, 02)) # 여기서 2020과 02값은 정수
+  print('%f' %(3.14))
+  
+# format()
+  "문자열 {} 공간".format({}에 넣을 값 입력)
+  
+  print("{} My name is {}, nice to meet you. ".format("Hi", "Kim Jaemin"))
+  >>>
+  Hi my name is Kim jaemin, nice to meet you.
+  
+  #인덱스 지정 사용
+   {0},{1}과 같이 사용하여 .format()에 들어오는 0번째 요소가 {0}로 들어가며, 1번째 요소는 {1}로 들어가라는 식으로 지정할 수 있음
+   파이썬 인덱싱은 대체로 1번부터가 아니라 0번부터 시작
+  
+   print("{0},{1},{2},{0},{0}".format('kim','lee','you'))
+   >>>
+   kim, lee, you, kim, kim
+   
+  #이름 지정 사용
+   {name},{age}와 같이 {}안에 이름을 지정하여 name='kim'이면 name으로 지정되어 있는 곳에 모두 kim이 들어갈 수 있도록 사용할 수 있음
+   
+   print("My name is {name}, My age is {age}".format(name='KimJaemin',age=26))
+   >>>
+   My name is KimJaemin, My age is 26
+  
+  #숫자 자리 맞추기
+   {}의 인덱스나 이름 뒤에 :(콜론)을 붙이고 0과 자릿수를 지정할 숫자를 써주면 됨.
+   {age:03d}라고 하면 age란 곳에 들어오는 정수를 3개의 자리수로 맞추는 것.
+   d는 정수, f는 실수를 의미하며 f(실수)는 소수자리수도 지정이 가능함.
+   그리고 실수는 .(소수점)을 포함해서 자릿수가 측정됨.
+   
+   print("{age:05d}".format(age=231))
+   print("{0:08.2f}'.format(3.14))
+          #.2 -> 소수자리수 2개, .4 -> 소수자리수 4개
+   >>>
+   00231
+   00003.14 #.(소수점)을 포함해 8자리
