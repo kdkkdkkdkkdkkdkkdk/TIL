@@ -7,5 +7,6 @@ for i in range(6):
   if value in num:
     contiunue
   num.append(value)
-  
+
+num.sort()
 print(num)
