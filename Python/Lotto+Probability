@@ -1,0 +1,34 @@
+import random
+hit=[0 for i in range(46)]
+for i in range(100):
+  num=[]
+  while len(num)<6:
+    value=random.randint(1,45)
+    if value in num:
+      continue
+    num.append(value)
+  for nums in num:
+    hit[nums]+=1
+for i in range(46):
+  print(str(i)+":"+str(hit[i])+"번")
+  
+dic={}
+for i in range(46):
+  dic[i]=[]
+  
+for idx,num in enumerate(hit):
+  dic[num].append(idx)
+  
+wow=[]
+k=0
+for i in range(45,-1,-1):
+  for j in did[i]
+    if k == 6:
+     break
+    wow.append(j)
+    k+=1 
+  if k == 6:
+  break
+
+wow.sort()
+print(wow)
