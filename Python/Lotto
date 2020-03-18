@@ -10,3 +10,17 @@ for i in range(6):
 
 num.sort()
 print(num)
+
+#박지원 코드
+
+import random
+
+num = []
+
+while len(num)<6:
+  value = random.randint(1,46)
+  if value in num:
+    continue
+  num.append(value)
+num.sort()
+print(num)
