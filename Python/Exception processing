@@ -1,0 +1,85 @@
+# 예외처리
+
+try: 
+  일반코딩
+except[발생 오류[as 오류 메시지 변수]]:
+  오류났을 때 코딩
+
+try:
+  print(10/0)
+except:
+  print("error")
+
+# 에러 문구를 모를 때, 무슨 에러인지 정확하게 알 수 있게 됨
+
+try:
+  print(10/0)
+except Exception as e:
+  print(e)
+  
+# except 중첩
+
+try:
+  print(10/0)
+except ZeroDivisionError as e:
+  print("Zero error :",e)
+except Exception as e:
+  print("ex error :",e)
+  
+>>>
+Zero error : division by zero
+>>>
+
+# 에러 발생 무시 pass
+
+try:
+  print(10/0)
+except ZeroDivisionError as e:
+  pass
+ 
+>>>
+>>>
+
+# Finally - 에러가 발생이 되었든 발생되지 않았든 무조건 실행이 되는 것, 보통 Close 등 꼭 해야하는 작업들에서 많이 사용
+
+try:
+  print(10/0)
+except ZeroDivisionError as e:
+  print("zero error :",e)
+finally:
+  print("Python End")
+
+>>>
+zero error : division by zero
+Python End
+>>>
+
+try:
+  print(10/5)
+except ZeroDivisionError as e:
+  print("zero error :",e)
+finally:
+  print("Python End")
+
+>>>
+2.0
+Python End
+>>>
+
+# raise - 강제로 에러를 발생시킴
+
+try:
+  print(10/3)
+  raise ValueError #강제 에러 발생. 에러코드 ValueError
+except ZeroDivisionError as e:
+  print("zero error :",e)
+except ValueError as e:
+  print("ValueError 에러")
+finally:
+  print("Python end")
+
+>>>
+3.33333333333335
+ValueError 에러
+Python end
+>>>
