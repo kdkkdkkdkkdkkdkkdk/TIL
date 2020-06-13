@@ -1,0 +1,22 @@
+star=""
+centerstar=""
+
+for i in range(1,10):
+    star="*"*i
+    print(star.ljust(10))
+
+#star.ljust()는 괄호안의 숫자만큼의 공간에
+#있는 문자열 star을 왼쪽 정렬 해주는 함수입니다.
+
+for k in range(1,10):
+    star="*"*k
+    print(star.rjust(10))
+#rjust는 오른쪽 정렬입니다.
+
+for j in range(1,20,2):
+    star="*"*j
+    print(star.center(19," "))
+#star.center(정수,"문자") 는 정수만큼의 공간을
+#지정하고 문자열 star을 가운데 정렬하며,
+#""안의 문자를 빈 공간에채우는 함수입니다.
+#빈 칸일 경우 생략가능합니다.
