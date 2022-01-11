@@ -1,3 +1,4 @@
+# baekjoon_1152.py
 # 단어의 개수
 
 A = input().split()
