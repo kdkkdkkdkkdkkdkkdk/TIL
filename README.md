@@ -1,1 +1,3 @@
-# ·TIL
+Today I learned
+
+H/W -> S/W
