@@ -1,8 +1,6 @@
 # baekjoon_1978.py
 # 소수찾기
 
-#루트 **(1/2)
-
 iter = int(input())
 nums = list(map(int, input().split()))
 prime = 0
@@ -18,3 +16,8 @@ for i in nums:
         prime += 1
 
 print(prime)
+
+# 루트 **(1/2)
+# pass : 실행할 코드가 없는 것으로 다음 행동을 계속해서 진행함
+# continue : 바로 다음 순번의 loop를 수행
+# break : 반복문을 멈추고 loop 
