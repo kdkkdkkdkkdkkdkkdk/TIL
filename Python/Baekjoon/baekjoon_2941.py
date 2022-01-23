@@ -9,5 +9,3 @@ for i in check:
         s = s.replace(i, '*')
 
 print(len(s))
-
-##
