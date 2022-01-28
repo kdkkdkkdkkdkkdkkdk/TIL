@@ -14,7 +14,7 @@ def hanoi(n, a, c, b):  # a : 시작, b : 보조, c : 목표
 
 x = int(input())
 print(2**x-1)
-print(hanoi(x, 1, 3, 2))
+hanoi(x, 1, 3, 2)
 
 # hanoi(3,1,3,2)
 # hanoi(2,1,2,3)
