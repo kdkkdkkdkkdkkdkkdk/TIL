@@ -1,7 +1,7 @@
 # baekjoon_2908.py
 # 상수
 
-a, b = input().split())
+a, b = input().split()
 
 new_a = int(a[::-1])
 new_b = int(b[::-1])
