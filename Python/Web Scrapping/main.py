@@ -1,11 +1,15 @@
 import requests
-# pip install requests
+# python -m pip install requests
 from bs4 import BeautifulSoup
-# pip install beautifulsoup4
+# python -m pip install beautifulsoup4
 
 indeed_result = requests.get("https://www.indeed.com/jobs?q=python&limit=50")
-indeed_soup = BeautifulSoup(indeed_result.text, "html.psarser")
+indeed_soup = BeautifulSoup(indeed_result.text, "html.parser")
 pagination = indeed_soup.find("div", {"class": "pagination"})
 pages = pagination.find_all('a')
 
-print(pages)
+spans = []
+for page in pages:
+    spans.append(page.find("span"))
+
+print(spans[:-1])
