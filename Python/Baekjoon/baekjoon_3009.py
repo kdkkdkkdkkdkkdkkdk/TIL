@@ -1,9 +1,6 @@
 # baekjoon_3009.py
 # 네 번째 점
 
-from pyexpat.errors import XML_ERROR_BINARY_ENTITY_REF
-
-
 x_arry = []
 y_arry = []
 
