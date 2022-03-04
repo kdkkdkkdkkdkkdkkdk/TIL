@@ -8,7 +8,12 @@ import sys
 input = sys.stdin.readline
 
 num = int(input())
-
 arry = list(map(int, input().split()))
+arry2 = sorted(set(arry))
 
-arry =
+dic = {}
+for i in range(len(arry2)):
+    dic[arry2[i]] = i
+
+for _ in arry:
+    print(dic[_], end=' ')

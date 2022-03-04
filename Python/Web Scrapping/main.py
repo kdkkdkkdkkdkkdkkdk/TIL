@@ -14,3 +14,6 @@ for link in links[:-1]:
     pages.append(int(link.string))
 
 max_page = pages[-1]
+
+for n in range(0, 2001):
+    print(f"start={n*50}")
