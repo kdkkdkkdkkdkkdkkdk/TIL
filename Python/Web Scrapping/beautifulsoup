@@ -1,0 +1,16 @@
+# beautifulsoup
+
+. HTML 분석을 위한 파이썬 라이브러리
+. beautifulsoup 설치
+    - pip install beautifulsoup4
+. beautifulsoup 사용법
+    - =Beautifulsoup(html 코드, html 번역선생님)
+
+    - import requests
+    - from bs4 import Beautifulsoup
+
+    - response = requests.get("https://www.naver.com")
+    - html = response.text
+    - soup = Beautifulsoup(html, 'html.parser')
+    - word = soup.select_one("#NM_set_home_btn")
+    - print(word.text)

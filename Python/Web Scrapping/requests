@@ -1,0 +1,12 @@
+# requests
+
+. HTTP 통신을 위한 파이썬 라이브러리
+. 라이브러리 : 프로그램 개발을 쉽게 하기 위한 도구
+. requests 설치 
+    - pip install requests
+. requests 사용법
+    - import requests
+    
+    - response = requests.get("https://www.naver.com")
+    - html = response.text
+    - print(html)
