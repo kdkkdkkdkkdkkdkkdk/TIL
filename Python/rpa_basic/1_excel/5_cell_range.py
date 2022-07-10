@@ -59,9 +59,9 @@ row_title = ws[1]  # 1번째 row만 가지고 오기
 #    print(column[0].value)
 
 # 2번째 줄부터 11번째 줄까지, 2번째 열부터 3번째 열까지
-for row in ws.iter_rows(min_row=2, max_row=11, min_col=2, max_col=3):  # 전체 row
-    # print(row[0].value, row[1].value)  # 수학, 영어
-    print(row)
+# for row in ws.iter_rows(min_row=2, max_row=11, min_col=2, max_col=3):  # 전체 row
+#    # print(row[0].value, row[1].value)  # 수학, 영어
+#    print(row)
 
 for col in ws.iter_cols(min_row=1, max_row=5, min_col=1, max_col=3):
     print(col)
